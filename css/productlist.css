@@ -1,0 +1,58 @@
+/* ---------- MOBILE ---------- */
+.product_list_container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  margin-top: 30px;
+}
+/* --- PRODUCT CARD --- */
+.product_card {
+  position: relative;
+}
+.subtle {
+  color: #777;
+  font-size: 14px;
+}
+.price {
+  font-weight: bold;
+}
+.old_price {
+  color: #999;
+  text-decoration: line-through;
+}
+/* --- TAG --- */
+
+.discount_tag {
+  position: absolute;
+  bottom: 60px;
+  right: 10px;
+  background: red;
+  color: white;
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+.soldout_tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #666;
+  color: white;
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+/* ---------- TABLET ---------- */
+
+@media (min-width: 600px) {
+  .product_list_container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/* ---------- DESKTOP ---------- */
+
+@media (min-width: 1000px) {
+  .product_list_container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
