@@ -1,0 +1,89 @@
+/* ---------- MOBILE ---------- */
+
+.product_page {
+  display: grid;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* IMAGE */
+
+.product_image img {
+  width: 100%;
+}
+
+/* PRODUCT INFO */
+
+.product_info h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.product_info p {
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.product_info h3 {
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+/* BUY BOX */
+
+.product_buy {
+  background: #ddd;
+  padding: 30px;
+  border-radius: 6px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.product_buy h3 {
+  font-size: 20px;
+}
+
+.product_buy p {
+  font-size: 16px;
+}
+
+/* SIZE SELECT */
+
+select {
+  padding: 8px;
+  margin-right: 10px;
+}
+
+/* BUTTON */
+
+button {
+  padding: 12px 18px;
+  border: none;
+  background: white;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ---------- TABLET ---------- */
+
+@media (min-width: 600px) {
+  .product_page {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ---------- DESKTOP ---------- */
+
+@media (min-width: 1000px) {
+  .product_page {
+    grid-template-columns: 1fr 1fr 320px;
+    align-items: stretch;
+  }
+
+  .product_buy {
+    height: 100%;
+  }
+}

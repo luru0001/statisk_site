@@ -1,0 +1,107 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  background: #f8f8f8;
+  color: #222;
+  padding: 20px;
+}
+main {
+  width: 95%;
+  margin: auto;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+/* ---------- MOBILE ---------- */
+/* --- LOGO ---*/
+header h1 {
+  font-size: 20px;
+  font-weight: 700;
+}
+header h1 span {
+  color: red;
+}
+/* ---NAVIGATION --- */
+nav a {
+  font-size: 12px;
+  font-weight: 500;
+}
+/* --- KATEGORI TEKST --- */
+a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 17px;
+}
+h2 {
+  font-size: 20px;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* logo */
+
+/* centrér siden */
+
+main {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* ---------- TABLET ---------- */
+
+@media (min-width: 600px) {
+  /* --- LOGO ---*/
+
+  header h1 {
+    font-size: 25px;
+    font-weight: 700;
+  }
+  /* ---NAVIGATION --- */
+  nav a {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  /* --- KATEGORI TEKST --- */
+  a {
+    font-size: 20px;
+  }
+  /* --- TEKST --- */
+  h2 {
+    font-size: 25px;
+  }
+}
+
+/* ---------- DESKTOP ---------- */
+
+@media (min-width: 1000px) {
+  /* --- LOGO ---*/
+  header h1 {
+    font-size: 50px;
+    font-weight: 1000;
+  }
+  /* ---NAVIGATION --- */
+  nav {
+    display: flex;
+    gap: 70px;
+  }
+  nav a {
+    font-size: 30px;
+    font-weight: 500;
+  }
+  /* --- KATEGORI TEKST --- */
+  a {
+    font-size: 20px;
+  }
+
+  /* --- TEKST --- */
+  h2 {
+    font-size: 40px;
+  }
+}
